@@ -5,9 +5,9 @@ import java.util.*;
 /**
  * Created by mahajani on 7/26/2017.
  */
-public class CarManager {
+class CarManager {
 
-    public static Set<Car> createCarsData(CarIdComparator carIdComparator){
+     static Set<Car> createCarsData(CarIdComparator carIdComparator){
         Set<Car> carSet = new TreeSet<>(carIdComparator);
         carSet.add( new Car(11, 10, "Suzuki"));
         carSet.add(new Car(12, 56, "Hyundau"));
@@ -17,7 +17,7 @@ public class CarManager {
         return carSet;
     }
 
-    public static Set<Car> createCarsData(CarNameComparator carNameComparator){
+    static Set<Car> createCarsData(CarNameComparator carNameComparator){
         Set<Car> carSet = new TreeSet<>(carNameComparator);
         carSet.add( new Car(11, 10, "Suzuki"));
         carSet.add(new Car(12, 56, "Hyundau"));
@@ -34,6 +34,8 @@ public class CarManager {
         while (itr.hasNext()) {
             System.out.println(itr.next());
         }
+
+        System.out.println("---------------------------------------");
 
         Set<Car> carSet2 = createCarsData(new CarIdComparator());
         Iterator itr2 = carSet2.iterator();

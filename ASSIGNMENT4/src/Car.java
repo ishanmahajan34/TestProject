@@ -1,13 +1,13 @@
 /**
  * Created by mahajani on 7/26/2017.
  */
-public class Car implements Comparable{
+class Car implements Comparable {
     private int id;
     private double price;
     private String brand;
 
 
-    public Car(int id, double price, String brand) {
+    Car(int id, double price, String brand) {
         this.id = id;
         this.price = price;
         this.brand = brand;
