@@ -7,13 +7,13 @@ public class SalaryServices {
         if (HRServices.eligibleForPromotion(employeeID)) {
 
 //            employeeDatabase.creeateEmployeeDatabse();
-            System.out.println("YOUR ARE ELIGIBLE FOR PROMOTION");
+            System.out.println("EMPLOYEE "+employeeID+" IS ELIGIBLE FOR PROMOTION");
             salary += increment(employeeID, salary);
             return salary;
 
         } else {
 
-            System.out.println("YOUR ARE NOT ELIGIBLE FOR PROMOTION");
+            System.out.println("EMPLOYEE "+employeeID+ " ARE NOT ELIGIBLE FOR PROMOTION");
             return salary;
         }
 

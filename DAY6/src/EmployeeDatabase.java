@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * Created by mahajani on 7/25/2017.
  */
-public class EmployeeDatabase {
+class EmployeeDatabase {
 
     Employee employee1 = new Employee(14,"Ishan Mahajan", 4500000,"8310703981", "Software Developer");
     Employee employee2 = new Employee(15,"Aryan Kumar", 5000000,"8390165281", "Software Architect");

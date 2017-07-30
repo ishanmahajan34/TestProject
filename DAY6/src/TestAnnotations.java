@@ -10,7 +10,7 @@ public class TestAnnotations {
         return date;
     }
 
-    @Company(name = "INTEL" , location = "PUNE")
+    @Company(name = "IBM" , location = "PUNE")
     static public void display() {
         System.out.println("Date today is " + date);
     }

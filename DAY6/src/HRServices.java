@@ -14,7 +14,7 @@ public class HRServices {
 
 //        System.out.println(employeeID/10);
         employeeCredits.put(employeeID,employeeID%10);
-        System.out.println(employeeCredits.get(employeeID));
+//        System.out.println(employeeCredits.get(employeeID));
     }
 
     public static int getCredits(int employeeID) {
@@ -30,13 +30,13 @@ public class HRServices {
 
     public static void changeProject(int employeeID) {
         if(employeeCredits.get(employeeID) > 3) {
-            System.out.println("YOU WILL BE ASSIGNED A NEW PROJECT");
+            System.out.println("EMPLOYEE "+employeeID+" WILL BE ASSIGNED A NEW PROJECT");
         }
     }
 
     public static boolean changeDesignation(int employeeID) {
         if(employeeCredits.get(employeeID) > 3) {
-            System.out.println("YOU ARE ELIGIBLE FOR PROMOTION");
+            System.out.println("EMPLOYEE "+employeeID + " IS ELIGIBLE FOR PROMOTION");
             return true;
         }
         return false;

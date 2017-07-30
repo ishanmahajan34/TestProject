@@ -54,7 +54,7 @@ public class SetDemo1 {
 //        dispHRA(employeeList);
         display(employeeList);
         incrementSalary(employeeList);
-        System.out.println("--------------");
+        System.out.println("--------------AFTER INCREMENT--------------");
         display(employeeList);
 
     }
