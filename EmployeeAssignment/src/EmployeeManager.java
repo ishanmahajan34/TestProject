@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by mahajani on 7/28/2017.
  */
-public class EmployeeManager {
+class EmployeeManager {
 
     public List<Employee> createEmployeeData(){
 
@@ -31,11 +31,17 @@ public class EmployeeManager {
 
     public static void main(String[] args) {
 
+
+
+
         String path = "C:\\Users\\mahajani\\Desktop\\Objects.txt";
         FileOperations fileOperations = new FileOperations();
 
         EmployeeManager employeeManager = new EmployeeManager();
         List<Employee> employeeList = new ArrayList<>() ;
+
+
+
         employeeList = employeeManager.createEmployeeData();
         Collections.sort(employeeList);
         Iterator<Employee> itr = employeeList.iterator();
