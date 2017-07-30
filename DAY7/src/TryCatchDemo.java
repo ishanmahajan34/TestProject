@@ -1,9 +1,9 @@
 /**
  * Created by mahajani on 7/26/2017.
  */
-public class TryCatchDemo {
+class TryCatchDemo {
 
-    public static void add (int n1, int n2) {
+    static void add (int n1, int n2) {
 
         int n3 = 0;
         try{

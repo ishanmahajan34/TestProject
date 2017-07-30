@@ -1,14 +1,14 @@
 /**
  * Created by mahajani on 7/26/2017.
  */
-public class User {
+class User {
 
     private int uid;
     private String name;
     private int age;
     private int rating;
 
-    public User(int uid, String name, int age, int rating) {
+    User(int uid, String name, int age, int rating) {
         this.uid = uid;
         this.name = name;
         this.age = age;

@@ -8,7 +8,6 @@ public class MovieService{
             InvalidAgeException e = new InvalidAgeException("INVALID AGE!!");
             throw e;
         }
-        //System.out.println("11111111111111!!!!!");
         else if(user.getAge() > 0 && user.getAge() <= 10 ) {
             InvalidAgeException e = new InvalidAgeException("AGE BETWEEN 0  to 10 !!");
             throw e;
